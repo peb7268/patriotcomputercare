@@ -1,5 +1,4 @@
 <?php
-
 define('JS_PATH', get_template_directory_uri().'/js');
 
 
@@ -43,7 +42,7 @@ function enqueue_scripts(){
 	wp_register_script('nivo', JS_PATH.'/vendors/nivoslider/jquery.nivo.slider.pack.js', array('jquery'), null, true);
 	wp_register_style('nivo', JS_PATH.'/vendors/nivoslider/nivo-slider.css', null, true);
 
-	wp_register_script('main', JS_PATH.'/main.js', array('jquery'), null, true);
+	wp_register_script('main', get_template_directory_uri().'/dist/js/bundle.js', array('jquery'), null, true);
 	
 	wp_enqueue_script('nivo');
 	wp_enqueue_style('nivo');

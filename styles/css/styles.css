@@ -59,6 +59,9 @@ p {
   margin: 0 0 7px;
   line-height: 1.4; }
 
+strong {
+  font-weight: bold; }
+
 h1, h2, h3, h4 {
   font-weight: bold; }
 
@@ -138,8 +141,19 @@ h3 {
     text-indent: 1%;
     width: 645px;
     float: left; }
-    #header #logo h1 {
-      font-size: 45pt; }
+    #header #logo h1.title {
+      font-size: 45pt;
+      line-height: 1.9;
+      margin: 0 0 -15px; }
+      #header #logo h1.title > span {
+        text-indent: -9999px;
+        display: block;
+        background: transparent url("../../img/logo.jpg") 0 0 no-repeat;
+        width: 100px;
+        height: 84px;
+        background-size: 100px;
+        float: left;
+        margin: 0 -75px 0 0; }
   #header #nav {
     float: left;
     margin: 0 0 0 2%;
@@ -165,8 +179,8 @@ h3 {
     color: #000;
     font-size: 24pt;
     position: absolute;
-    right: 4%;
-    top: 19px;
+    right: 2%;
+    top: 0;
     display: none; }
   #header #border {
     background-color: #0251B3;
@@ -210,7 +224,7 @@ h3 {
   #header #socialMedia {
     position: absolute;
     right: 5%;
-    top: 25px; }
+    top: 50px; }
     #header #socialMedia li {
       float: left;
       margin: 0 5px 0 0; }
@@ -314,13 +328,16 @@ h3 {
   #footer #socialMedia {
     position: absolute;
     right: 5%;
-    top: 4px; }
+    top: 4px;
+    width: 115px; }
     #footer #socialMedia li {
       float: left;
       margin: 0 5px 0 0; }
       #footer #socialMedia li a {
         color: #fff;
         font-size: 20pt; }
+  #footer #footerMobileNav {
+    display: none; }
 
 #emailForm {
   display: none;
@@ -579,17 +596,17 @@ h3 {
 
 .home #home-ctas {
   float: left;
-  margin: 5px 0 auto;
+  margin: 5px 0 15px;
   width: 100%; }
   .home #home-ctas li {
     box-sizing: border-box;
     padding: 10px;
     background: #ccc;
     float: left;
-    margin: 0;
-    width: 49%; }
+    margin: 0 5px 0 0;
+    width: 33%;
+    min-height: 100px; }
     .home #home-ctas li:last-child {
-      float: right;
       margin-right: 0; }
 
 .page #content.wrapper {
@@ -920,9 +937,7 @@ h3 {
     float: none;
     margin: 5px auto; } }
 
-@media (max-width: 550px) {
-  #header #logo {
-    line-height: 1.1; }
+@media (max-width: 575px) {
   #header #nav {
     margin: 5px auto 10px;
     width: 100%;
@@ -947,6 +962,22 @@ h3 {
       padding: 5px 0 7px 8px; }
     #header #border #searchform {
       top: 10px; }
+  #header #logo h1.title {
+    font-size: 28pt;
+    line-height: 2.3;
+    margin: 0 0 -15px;
+    text-align: left; }
+    #header #logo h1.title span {
+      width: 70px;
+      height: 84px;
+      background-size: 69px;
+      margin: 0px -55px 0 0; }
+  #header #socialMedia {
+    display: none; }
+  .home #home-ctas li {
+    float: none;
+    width: 100%;
+    margin: 0 0 10px; }
   .location, .contact-block {
     float: none;
     margin: 5px auto; }
@@ -968,7 +999,8 @@ h3 {
     #projects #projects_and_highlights li a {
       padding: 10px 5px; }
   .page #content.wrapper {
-    margin-top: 0px; }
+    margin: 0px auto;
+    padding: 10px 0; }
   #gallery-1.gallery {
     width: 98%;
     overflow: hidden;
@@ -1030,4 +1062,39 @@ h3 {
       float: none; }
     .serp_item .post_excerpt {
       float: none;
-      width: initial; } }
+      width: initial; }
+  #footer {
+    height: initial;
+    width: 100%;
+    min-height: 45px; }
+    #footer #footerMobileNav {
+      display: block;
+      color: #fff;
+      position: absolute;
+      right: 3%;
+      top: 10px;
+      font-size: 18pt; }
+    #footer #footerMenu {
+      width: 100%;
+      margin: 12px auto 0;
+      display: none;
+      padding-top: 30px; }
+      #footer #footerMenu li {
+        float: none;
+        margin: 0;
+        padding: 0;
+        border-right: 0;
+        width: 100%;
+        display: block; }
+        #footer #footerMenu li a {
+          color: #fff;
+          display: block;
+          background: #0871F2;
+          padding: 10px;
+          border-bottom: 1px solid #03408B;
+          border-top: 1px solid #4597FD;
+          text-align: center; }
+    #footer #socialMedia {
+      position: absolute;
+      left: 35%;
+      top: 8px; } }

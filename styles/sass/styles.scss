@@ -200,17 +200,17 @@
 .home {
 	#home-ctas {
 		float: left;
-		margin: 5px 0 auto;
+		margin: 5px 0 15px;
 		width: 100%;
 		li {
 			box-sizing: border-box;
 			padding: 10px;
 			background: #ccc;
 			float: left;
-			margin: 0;
-			width: 49%;
+			margin: 0 5px 0 0;
+		    width: 33%;
+		    min-height: 100px;
 			&:last-child {
-				float: right;
 				margin-right: 0;
 			}
 		}

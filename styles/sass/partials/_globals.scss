@@ -1,6 +1,7 @@
 body, p, a { -webkit-font-smoothing: antialiased; font-size: 11pt; color: #333; font-family: 'Open Sans', sans-serif; }
 a { text-decoration: none; }
 p { margin: 0 0 7px; line-height: 1.4; }
+strong { font-weight: bold; }
 h1, h2, h3, h4 { font-weight: bold; }
 h1 { font-size: 24pt; }
 h2 { font-size: 20pt; }
@@ -68,7 +69,23 @@ h3 { font-size: 16pt; }
 	    text-indent: 1%; 
         width: 645px;
 	    float: left;
-	    h1 { font-size: 45pt; }
+
+	    h1.title { 
+	    	font-size: 45pt; 
+	    	line-height: 1.9;
+    		margin: 0 0 -15px;
+
+	    	& > span {
+	    		text-indent: -9999px;
+	    		display: block;
+			    background: transparent url("../../img/logo.jpg") 0 0 no-repeat;
+			    width: 100px;
+			    height: 84px;
+			    background-size: 100px;
+			    float: left;
+			    margin: 0 -75px 0 0;
+	    	}
+	    }
 	}
 
 	#nav {
@@ -101,8 +118,8 @@ h3 { font-size: 16pt; }
 		color: $primary;
 		font-size: 24pt;
 		position: absolute;
-		right: 4%;
-		top: 19px;
+		right: 2%;
+		top: 0;
 		display: none;
 	}
 
@@ -158,7 +175,7 @@ h3 { font-size: 16pt; }
 	#socialMedia {
 		position: absolute;
 		right: 5%;
-		top: 25px;
+		top: 50px;
 
 		li {
 			float: left;
@@ -287,6 +304,7 @@ h3 { font-size: 16pt; }
 		position: absolute;
 		right: 5%;
 		top: 4px;
+		width: 115px;
 
 		li {
 			float: left;
@@ -296,6 +314,10 @@ h3 { font-size: 16pt; }
 				font-size: 20pt;
 			}
 		}
+	}
+
+	#footerMobileNav {
+		display: none;
 	}
 }
 

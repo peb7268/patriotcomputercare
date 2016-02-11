@@ -1,7 +1,6 @@
 //iPhone 6+ & Note size
-@media (max-width: 550px) {
+@media (max-width: 575px) {
 	#header {
-		#logo { line-height: 1.1; }
 	    #nav {
 		    margin: 5px auto 10px;
 		    width: 100%;
@@ -22,6 +21,7 @@
 		    }
 	    }
 	    .toggleMobileNav { display: block; }
+	    
 	    #border {
 	    	min-height: 45px;
 	    	p {
@@ -31,11 +31,38 @@
 	    		top: 10px;
 	    	}
 	    }
+	    
+	    #logo h1.title {
+    	    font-size: 28pt;
+		    line-height: 2.3;
+		    margin: 0 0 -15px;
+		    text-align: left;
+	    	span {
+	    		width: 70px;
+			    height: 84px;
+			    background-size: 69px;
+			    margin: 0px -55px 0 0;
+	    	}
+	    }
+
+	    #socialMedia {
+    		display: none;
+    	}
 	}
+
+	.home #home-ctas {
+		li {
+			float: none;
+			width: 100%;
+			margin: 0 0 10px;
+		}
+	}
+	
 	.location, .contact-block {
 		float: none;
 		margin: 5px auto;
 	}
+
 	#hero {
 		.hero-left, .hero-right {
 			float: none;
@@ -66,7 +93,8 @@
 	}
 	.page {
 		#content.wrapper {
-			margin-top: 0px;
+			margin: 0px auto;
+			padding: 10px 0;
 		}
 	}
 
@@ -154,6 +182,51 @@
 		.post_excerpt {
 			float: none;
 			width: initial;
+		}
+	}
+
+	#footer {
+		height: initial;
+		width: 100%; 
+		min-height: 45px;
+
+		#footerMobileNav {
+			display: block;
+		    color: #fff;
+		    position: absolute;
+		    right: 3%;
+		    top: 10px;
+		    font-size: 18pt;
+		}
+
+		#footerMenu {
+			width: 100%;
+		    margin: 12px auto 0;
+		    display: none;
+		    padding-top: 30px;
+		    li {
+	    	    float: none;
+			    margin: 0;
+			    padding: 0;
+			    border-right: 0;
+			    width: 100%;
+			    display: block;
+			    a {
+		    	    color: #fff;
+				    display: block;
+				    background: #0871F2;
+				    padding: 10px;
+				    border-bottom: 1px solid #03408B;
+				    border-top: 1px solid #4597FD;
+				    text-align: center;
+			    }
+		    }
+		}
+
+		#socialMedia {
+		    position: absolute;
+		    left: 35%;
+		    top: 8px;
 		}
 	}
 }

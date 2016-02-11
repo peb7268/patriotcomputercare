@@ -2,8 +2,6 @@
 	window.app = {};
 	app.animationSpeed = 225;
 
-
-
 	function lookupLink(target){
 		var link = $(target).data('action');
 		
@@ -14,14 +12,15 @@
 
 	function bindEvents(){
 		$('#searchform a').on('click', toggleSearchForm);
-		$('.toggleMobileNav').on('click', toggleMobileNav);
+		$('a.toggleMobileNav').on('click', toggleMobileNav);
+		$('a#footerMobileNav').on('click', toggleMobileNav);
 
 		$('.services-grid li a').on('click', toggleService);
 		$('#services #services-content .close').on('click', function(){
 			app.retractService($('.active'));
 		});
 
-		$('#nav li:last-child() a, #footerMenu li:last-child() a').fancybox();
+		//$('#nav li:last-child() a, #footerMenu li:last-child() a').fancybox();
 	}
 
 	function toggleService(evt){
@@ -66,8 +65,9 @@
 	}
 
 	function toggleMobileNav(evt){
+		console.log('toggleMobileNav');
 		evt.preventDefault();
-		$('#nav').slideToggle(100);
+		$(evt.currentTarget).parent().find('.menu').slideToggle(100)
 	}
 
 	function hideEmailForm(evt){

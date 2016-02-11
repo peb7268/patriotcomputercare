@@ -13,7 +13,7 @@
 	<div id="header" class="clearfix">
 		<div class="wrapper">
 			<a id="logo" href="<?php bloginfo('url'); ?>">
-				<h1 class="title">Patriot Computer Care</h1>
+				<h1 class="title"><span>P</span>atriot Computer Care</h1>
 			</a>
 		</div>
 	
@@ -27,17 +27,18 @@
 					'container'			=> false,
 				)); ?>
 
-				<a href="#" class="toggleMobileNav">
-					<i class="fa fa-bars"></i>
-				</a>
 				<?php get_search_form(); ?>
 			</div>
 		</div>
 
 		<ul id="socialMedia">
-			<li><a href=""><i class="fa fa-facebook-official"></i></a></li>
-			<li><a href=""><i class="fa fa-twitter-square"></i></a></li>
-			<li><a href=""><i class="fa fa-google-plus-square"></i></a></li>
-			<li><a href=""><i class="fa fa-youtube-square"></i></a></li>
+			<li><a href="https://www.facebook.com/patriotcomputercare"><i class="fa fa-facebook-official"></i></a></li>
+			<li><a href="https://twitter.com/PatriotCompCare"><i class="fa fa-twitter-square"></i></a></li>
+			<li><a href="https://plus.google.com/+Patriotcomputercare"><i class="fa fa-google-plus-square"></i></a></li>
+			<li><a href="https://www.youtube.com/c/Patriotcomputercare"><i class="fa fa-youtube-square"></i></a></li>
 		</ul>
+
+		<a href="#" class="toggleMobileNav">
+			<i class="fa fa-bars"></i>
+		</a>
 	</div>

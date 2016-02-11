@@ -3,11 +3,11 @@ var gulp 		    = require('gulp');
 // var optipng 	  = require('imagemin-optipng');
 // var jpegtran 	  = require('imagemin-jpegtran');
 var browserSync = require("browser-sync").create();
-//var browserify  = require('browserify');
-// var streamify 	= require('gulp-streamify');
-//var rename 		  = require('gulp-rename');
-// var uglify 		  = require('gulp-uglify')
-// var source   	  = require('vinyl-source-stream');
+var browserify  = require('browserify');
+var streamify 	= require('gulp-streamify');
+var rename 		  = require('gulp-rename');
+var uglify 		  = require('gulp-uglify')
+var source   	  = require('vinyl-source-stream');
 var sass 		    = require('gulp-sass');
 var notify 		  = require("gulp-notify");
 
@@ -55,7 +55,7 @@ gulp.task('scripts:watch', function () {
 gulp.task('serve', ['sass'], function(){
   browserSync.init({
         //server: "./"
-        proxy: 'http://timsautoupholstery.com'
+        proxy: 'http://www.patriotcomputercare.com/'
     });
 
     gulp.watch(paths.sass, ['sass']);

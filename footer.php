@@ -1,5 +1,4 @@
 	<?php wp_footer(); ?>
-	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/dist/js/bundle.js"></script>
 
 	<div id="emailForm">
 		<p>Want to learn some do it yourself tips, 
@@ -30,12 +29,15 @@
         </div>
     </form>
     </div>
-    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+    
     <!--End mc_embed_signup-->
 		</div>
 	</div>
 
 	<div id="footer">
+    <a href="#" id="footerMobileNav">
+      <i class="fa fa-bars"></i>
+    </a>
 		<?php wp_nav_menu(array(
           'theme_location'  => 'footer_nav',
           'menu'        => 'footer_nav',
@@ -45,10 +47,10 @@
         )); ?>
 
         <ul id="socialMedia">
-          <li><a href=""><i class="fa fa-facebook-official"></i></a></li>
-          <li><a href=""><i class="fa fa-twitter-square"></i></a></li>
-          <li><a href=""><i class="fa fa-google-plus-square"></i></a></li>
-          <li><a href=""><i class="fa fa-youtube-square"></i></a></li>
+          <li><a href="https://www.facebook.com/patriotcomputercare"><i class="fa fa-facebook-official"></i></a></li>
+          <li><a href="https://twitter.com/PatriotCompCare"><i class="fa fa-twitter-square"></i></a></li>
+          <li><a href="https://plus.google.com/+Patriotcomputercare"><i class="fa fa-google-plus-square"></i></a></li>
+          <li><a href="https://www.youtube.com/c/Patriotcomputercare"><i class="fa fa-youtube-square"></i></a></li>
         </ul>
 	</div>
 
